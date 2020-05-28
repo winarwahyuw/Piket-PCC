@@ -19,11 +19,12 @@ Route::get('master', function () {
     return view('master');
 });
 
-// Route::get('index', function () {
-//     return view('index');
-// });
 
+//coba input
 Route::get('index', 'PiketController@tampilData');
 
-Route::get('coba', 'PiketController@tampilData');
+//menyimpan mulai piket
+Route::post('store', 'PiketController@store');
+//menampilkan daftar piket
+Route::get('tampilkan_piket', 'PiketController@tampilkan');
 
