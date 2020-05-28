@@ -8,24 +8,20 @@
 
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
-    <link rel="stylesheet" href="{{asset('style.css')}}">
+    <link rel="stylesheet" href="{{asset('style/main.css')}}">
 
 </head>
 <body>
-    <nav class="navbar navbar-primary bg-light">
-        <!-- Navbar content -->
+    <nav class="navbar navbar-primary ">
         <h1 class="text-center">PIKET UKM PCC</h1>
     </nav>
 
     @yield('content')
 
+    <footer class="text-center">
+        <h5>&copy Departemen Software 2019</h5>
+    </footer>
 
-
-    {{-- <footer class="text-center">
-        &copy Departemen Software 2019
-    </footer> --}}
-
-    
     {{-- ---------------------------------------------------------------------------------------------- --}}
     <script src="{{ asset ('jquery-2.2.1.min.js')}}"></script>
     <script src="{{asset('bootstrap/js/bootstrap.js')}}"></script>
