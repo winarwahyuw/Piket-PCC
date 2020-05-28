@@ -69,3 +69,13 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Piket PCC
+
+Aplikasi piket untuk STO UKM PCC.
+Aplikasi berbasis web, dibangun menggunakan HTML, CSS, Javascript, dan Laravel
+
+## Update 28 Mei
+
+Insert belum bisa, chained dropdown baru dibuat, masih sederhana
