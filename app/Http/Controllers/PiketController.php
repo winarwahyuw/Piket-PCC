@@ -28,7 +28,7 @@ class PiketController extends Controller
         $piket = new Piket;
         $piket->nim=$request->nim;
         $piket->mulai_piket=$request->mulai_piket;
-        $piket->selesai_piket=$request->gettimeofday();
+        // $piket->selesai_piket=$request->gettimeofday();
 
         $piket->save();
 
