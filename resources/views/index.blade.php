@@ -90,9 +90,10 @@
                         @foreach ($list_data_piket as $list_piket)
                             <tr>
                             <td>{{ $list_piket->id_piket}}</td>
-                            <td>{{ ($list_piket->user['nama'])?
-                                    $list_piket->user['nama'] : '-'}}</td>
-                            <td>{{ $list_piket->user['kode_jabatan'] }}</td>
+                            {{-- <td>{{ ($list_piket->user['nama'])?
+                                    $list_piket->user['nama'] : '-'}}</td> --}}
+                            <td>{{ $list_piket->nama}}</td>
+                            <td>{{ $list_piket->jabatan}}</td>
                             <td>{{ $list_piket->mulai_piket}}</td>
                             <td>{{ $list_piket->selesai_piket}}</td>
                             <td>{{ $list_piket->aktivitas}}</td>
