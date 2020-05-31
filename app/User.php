@@ -7,12 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 class User extends Model
 {
     protected $table='user';
+    protected $fillable=['nim', 'nama', 'kode_jabatan', 'periode'];
+    protected $primaryKey='nim';
 
-    public function userJabatan(){
+    public function jabatan(){
         return $this->belongsTo('App\Jabatan', 'kode_jabatan');
     }
 
-    public function userPiket(){
-        return $this->hasOne('App\Piket', 'nim');
+    public function user(){
+        return $this->hasMany('App\Piket', 'nim');
     }
+
 }
