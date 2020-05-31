@@ -20,7 +20,7 @@ class CreatePiketTable extends Migration
                                     ->on('user');
             $table->timeTz('mulai_piket');
             $table->timeTz('selesai_piket');
-            $table->string('keterangan',200)->change();
+            $table->string('aktivitas', 200)->change();
             $table->enum('status',['sedang berlangsung','selesai'])
                     ->default('sedang berlangsung')
                     ->change();
