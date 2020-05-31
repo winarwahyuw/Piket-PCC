@@ -19,17 +19,21 @@ class PiketController extends Controller
         $jabatan=DB::table('jabatan')->get();
         $nama   =DB::table('user')->get();
 
-        //join Nama dan Jabatan
-        // $join=DB::table('user')
-        //         ->leftjoin('jabatan','user.kode_jabatan','=','jabatan.kode_jabatan')
-        //         ->select('user.nama','jabatan.nama_jabatan')
-        //         ->get();
-
-        // $kode_jabatan=User::get('kode_jabatan');
-        // $nama_jabatan=Jabatan::where('jabatan.kode_jabatan', '=', 'user.kode_jabatan')->get();
-
         //menampilkan data di table list piket
         $list_data_piket    = Piket::all();
+
+        //join Nama dan Jabatan
+        $list_data_piket=DB::table('piket AS p')
+                ->join('user AS u','p.nim','=','u.nim')
+                ->join('jabatan AS j', 'u.kode_jabatan','=','j.kode_jabatan')
+                ->select('p.id_piket',
+                        'p.nim AS nim',
+                        'u.nama AS nama',
+                        'j.nama_jabatan AS jabatan',
+                        'p.mulai_piket',
+                        'p.selesai_piket',
+                        'p.aktivitas')
+                ->get();
 
         // $list_data_piket->nama_jabatan=$nama_jabatan;
         return view('index',
