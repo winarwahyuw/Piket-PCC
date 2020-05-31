@@ -28,3 +28,7 @@ Route::post('store', 'PiketController@store');
 //menampilkan daftar piket
 Route::get('tampilkan_piket', 'PiketController@tampilkan');
 
+//edit
+Route::get('edit/{id}/editData', 'PiketController@editData');
+Route::put('update/{id}', 'PiketController@updateData');
+
