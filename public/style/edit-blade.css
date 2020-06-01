@@ -1,0 +1,13 @@
+.page-title{
+    margin-bottom: 16px;
+}
+
+.form-edit{
+    width: 40%;
+    padding: 16px;
+}
+
+.btn-save-edit{
+    float: right;
+    display: flexbox;
+}
