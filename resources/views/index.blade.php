@@ -4,7 +4,7 @@
     <div class="container">
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-tambah-piket">
-            Tambah piket
+            <span>Tambah Piket</span>
         </button>
 
         <!-- Start Modal -->
@@ -71,8 +71,8 @@
 
         <hr>
         {{-- Start Table List Piket --}}
-        <div id="list_data_piket">
-            <h2>Daftar Piket</h2>
+        <div id="list_data_piket table-responsive">
+            <h2 class="page-title">Daftar Piket</h2>
             @if (!empty($list_data_piket))
                 <table class="table table-striped table-hover table-responsive">
                     <thead>
@@ -90,8 +90,6 @@
                         @foreach ($list_data_piket as $list_piket)
                             <tr>
                             <td>{{ $list_piket->id_piket}}</td>
-                            {{-- <td>{{ ($list_piket->user['nama'])?
-                                    $list_piket->user['nama'] : '-'}}</td> --}}
                             <td>{{ $list_piket->nama}}</td>
                             <td>{{ $list_piket->jabatan}}</td>
                             <td>{{ $list_piket->mulai_piket}}</td>
@@ -108,5 +106,6 @@
         </div>
         {{-- End Table List Piket --}}
     </div>
+    {{-- End container --}}
 @endsection
 
