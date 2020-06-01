@@ -13,13 +13,15 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-primary ">
-        <h1 class="text-center">PIKET UKM PCC</h1>
-    </nav>
+    <header>
+        <nav class="navbar navbar-primary">
+            <h1 class="text-center">PIKET UKM PCC</h1>
+        </nav>
+    </header>
 
     @yield('content')
 
-    <footer class="text-center">
+    <footer class="footer text-center">
         <h5>&copy Departemen Software 2019</h5>
     </footer>
 
