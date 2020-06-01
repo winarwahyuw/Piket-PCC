@@ -23,8 +23,8 @@ Aplikasi berbasis web, dibangun menggunakan HTML, CSS, Javascript, dan Laravel
 ## Update 31 Mei
 
 - Insert sudah bisa
-- chained dropdown untuk jabatan dan nama belum
-- bisa menampilkan kode jabatan, belum bisa menampilkan nama jabatan
+- Belum bisa chained dropdown untuk jabatan dan nama
+- bisa menampilkan nama jabatan
 - bisa menampilkan nama
 - halaman edit ketika tombol selesai ditekan
 - bisa update data yang diedit
