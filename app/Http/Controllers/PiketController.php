@@ -8,6 +8,7 @@ use Symfony\Component\Console\Helper\Table;
 use App\Piket;
 use App\User;
 use App\Jabatan;
+use Carbon\Carbon;
 use Carbon\Traits\Timestamp;
 
 use function Ramsey\Uuid\v1;
@@ -20,7 +21,8 @@ class PiketController extends Controller
         $nama   =DB::table('user')->get();
 
         //menampilkan data di table list piket
-        $list_data_piket    = Piket::all();
+        $list_data_piket    =Piket::all();
+        $piket_hari_ini     =Carbon::today();
 
         //join Nama dan Jabatan
         $list_data_piket=DB::table('piket AS p')
@@ -32,7 +34,9 @@ class PiketController extends Controller
                         'j.nama_jabatan AS jabatan',
                         'p.mulai_piket',
                         'p.selesai_piket',
-                        'p.aktivitas')
+                        'p.aktivitas', 'p.created_at')
+                //kalau mau menampilkan data khusus hari ini maka fungsi whereDate() berikut ini diaktifkan
+                // ->whereDate('p.created_at', $piket_hari_ini)
                 ->get();
 
         // $list_data_piket->nama_jabatan=$nama_jabatan;
