@@ -11,11 +11,6 @@
 |
 */
 
-// Route::get('master', function () {
-//     return view('master');
-// });
-
-
 //coba input
 Route::get('index', 'PiketController@tampilData');
 
