@@ -28,3 +28,8 @@ Aplikasi berbasis web, dibangun menggunakan HTML, CSS, Javascript, dan Laravel
 - bisa menampilkan nama
 - halaman edit ketika tombol selesai ditekan
 - bisa update data yang diedit
+
+## Update 1 Juni
+- Menampilkan dafatr piket hari ini
+- Ubah tampilan container
+- Chained dropdown dan keterangan on Progres belum
