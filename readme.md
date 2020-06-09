@@ -13,23 +13,4 @@
 Aplikasi piket untuk STO UKM PCC.
 Aplikasi berbasis web, dibangun menggunakan HTML, CSS, Javascript, dan Laravel
 
-## Update 28 Mei
-
-- Insert belum bisa
-- chained dropdown baru dibuat
-- belum bisa menampilkan jabatan
-- masih sederhana
-
-## Update 31 Mei
-
-- Insert sudah bisa
-- Belum bisa chained dropdown untuk jabatan dan nama
-- bisa menampilkan nama jabatan
-- bisa menampilkan nama
-- halaman edit ketika tombol selesai ditekan
-- bisa update data yang diedit
-
-## Update 1 Juni
-- Menampilkan dafatr piket hari ini
-- Ubah tampilan container
-- Chained dropdown dan keterangan on Progres belum
+## Underconstruction
