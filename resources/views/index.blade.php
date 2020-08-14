@@ -96,7 +96,10 @@
                             <td>{{ $list_piket->selesai_piket}}</td>
                             <td>{{ $list_piket->aktivitas}}</td>
                             <td>
-                            <a href="{{ url('edit/' .$list_piket->id_piket. '/editData')}}"  class="btn btn-warning" type="button" value="Selesai">Selesai</a>
+                                {{-- Tombol nongol pas waktu 2 jam lebih --}}
+                                @if( time() >= date('H:i:s', strtotime("+2 hour", strtotime($list_piket->mulai_piket))) )
+                                    <a href="{{ url('edit/' .$list_piket->id_piket. '/editData')}}"  class="btn btn-warning" type="button" value="Selesai">Selesai</a>
+                                @endif
                             </td>
                             </tr>
                         @endforeach
